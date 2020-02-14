@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Encrypted ephemeral file hosting via the terminal.">
+    <meta name="keyword" content="file hosting, single download file hosting, file download, file uploader, file hoster">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Trimly.fm</h1>
+      <h2 class="subtitle">Ephemeral encrypted file hosting via the command line</h2>
+      
+      <div class="sections">
+        <section class="section">
+          <h3 class="section-title">
+            About
+          </h3>
+
+          <div class="section-object">
+            All files are stored encrypted with the Blowfish-CBC cipher. Once a file is downloaded all traces of the file are immediately destoryed on the server. 
+          </div>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">
+            Upload
+          </h3>
+
+          <div class="section-object">
+            $ curl -F "key=aVerySecretKey" -F "file=@path/to/file" https://trimly.fm<br/>
+            $ https://trimly.fm/iBYnMlFv
+          </div>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">
+            Download
+          </h3>
+
+          <div class="section-object">
+            $ curl -F "key=aVerySecretKey" https://trimly.fm/iBYnMlFv -o secret-file.txt
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

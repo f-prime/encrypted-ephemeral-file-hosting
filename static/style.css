@@ -1,0 +1,27 @@
+html {
+  margin:0;
+  padding:0;
+  background-color:black;
+  color:#5ab003;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+  width:80%;
+  margin:0 auto;
+}
+
+.title, .subtitle {
+  text-align:center;
+}
+
+.section { 
+  width:80%;
+  margin:0 auto;
+}
+
+.section-object {
+  background-color:#232323;
+  padding:1em;
+  border-radius:4px;
+}
